@@ -1,7 +1,7 @@
 {
-  "name": "jaredportfolio",
+  "name": "queue-you",
   "version": "1.0.0",
-  "description": "heroku portfolio class-13",
+  "description": "queue-you",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaredscarr/jared_business_card.git"
+    "url": "https://github.com/jaredscarr/queue-you.git"
   },
   "author": "jaredscarr@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jaredscarr/jared_business_card/issues"
+    "url": "https://github.com/jaredscarr/"
   },
-  "homepage": "https://github.com/jaredscarr/jared_business_card#readme",
+  "homepage": "queue-you.herokuapp.com",
   "dependencies": {
     "express": "^4.13.3",
     "express-request-proxy": "^1.0.11"
