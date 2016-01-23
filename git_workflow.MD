@@ -10,6 +10,8 @@ Monday: Architecture Tuesday: Working Model Wednesday: MVP Thursday: Bug fixes a
 
 The work flow:
 
+Git
+
 1 Create a working branch off the developer branch using your first name
 2 for every feature or bug that you are working on create a new branch:
 
@@ -25,6 +27,11 @@ The work flow:
     git pull origin DEVELOPER
     SWITCH back to your feature branch
     carry on
+
+For the issues list in gitHub follow these guidelines
+
+MVP_Feature-name/bug-name/questions - then leave comments about specifics
+STR_Feature-name/bug-name/questions - then leave comments about specifics
 
 Daily Work Tasks
 

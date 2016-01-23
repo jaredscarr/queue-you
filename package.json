@@ -19,6 +19,7 @@
   "homepage": "queue-you.herokuapp.com",
   "dependencies": {
     "express": "^4.13.3",
-    "express-request-proxy": "^1.0.11"
+    "express-request-proxy": "^1.0.11",
+    "firebase": "^2.4.0"
   }
 }
