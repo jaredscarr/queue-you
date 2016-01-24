@@ -5,7 +5,30 @@
     <title></title>
   </head>
   <body>
-
+    <!-- add form validation -->
+    <section id="newUser">
+      <h3>Sign Up</h3>
+      <form action="#" method="post">
+        <p>First name:<input type="text" name="first" size="20" maxlength="30"/></p>
+        <p>Last name:<input type="text" name="last" size="20" maxlength="30"/></p>
+        <p>Email:<input type="text" name="email" size="20" maxlength="50"/></p>
+        <p>Which course are you enrolled in?
+          <select name="courses">
+            <option value="201">201</option>
+            <option value="201">301</option>
+            <option value="401_JS">401 JavaScript</option>
+            <option value="201_Py">401 Python</option>
+            <option value="201_iOS">401 iOS</option>
+          </select>
+          <input type="submit" name="signup" value="Sign Up"
+      </form>
+    </section>
+    <section id="returning">
+      <h3>Sign In</h3>
+      <p>Email:<input type="text" name="email" size="20" maxlength="50"/></p>
+      <!-- eventually a password -->
+      <input type="submit" name="signin" value="Sign In"
+    </section>
   <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
   <script src="/vendor/scripts/jquery-1.11.3.js"></script>
   </body>
