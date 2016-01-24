@@ -1,30 +1,36 @@
-var newPerson = new Firebase('https://queue-you.firebaseio.com/');
+(function(module) {
+  var theDatabase= {};
+  var newPerson = new Firebase('https://queue-you.firebaseio.com/database');
 
-//new profile constructor
-function NewProfile(first, last, email, course) {
-  this.first = first;
-  this.last = last;
-  this.email = email;
-  this.course = course;
-}
+  //new profile constructor
+  theDatabase.NewProfile = function(first, last, email, course) {
+    this.first = first;
+    this.last = last;
+    this.email = email;
+    this.course = course;
+    // this.admin = admin;
+  }
 
-//add user new user profile to the DOM as JSON data
+  //add user new user profile to the DOM as JSON data
 
 
 
-//populate current array of users with a callback function
+  //populate current array of users with a callback function
 
-function populateUsers (NewProfile) {
-  $.getJSON('data/test.json', function(data) {
+  theDatabase.populateUsers = function(NewProfile) {
+    $.getJSON('data/test.json', function(data) {
 
-  });
-}
-//separate teachers and students via the filter and map methods
-function separateUsers (totalUsers) {
+    });
+  }
+  //separate teachers and students via the filter and map methods
+  theDatabase.separateUsers = function(totalUsers) {
 
-}
+  }
 
-function loadUsers (teachers, students) {
-  //add teachers to the DOM
-  //add students to the DOM
-}
+  theDatabase.loadUsers = function(teachers, students) {
+    //add teachers to the DOM
+    //add students to the DOM
+  }
+  
+  module.theDatabase = theDatabase;
+})(window);
