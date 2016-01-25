@@ -1,0 +1,19 @@
+body {
+  background-color: #EDE6E3;
+}
+
+header {
+  background-color: #F06449;
+}
+
+footer {
+  background-color: #5BC3EB;
+}
+
+#teacher-button {
+  color: #5BC3EB;
+}
+
+#student-button {
+  color: #F06449;
+}
