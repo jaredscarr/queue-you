@@ -1,3 +1,5 @@
+// var Firebase = require('firebase');
+
 var ref = new Firebase('https://queue-you.firebasio.com/');
 
 function Profile(name, issue, desc) {
@@ -8,10 +10,15 @@ function Profile(name, issue, desc) {
 
 var getFormData = function() {
   $('#submit-button').on('click', function(e){
-    $name
-    $issue
-    $desc
+    e.preventDefault();
+    $name = $('#name').val();
+    $issue = $('input:checked').val();
+    $desc = $('#desc').val();
     var newUser = new Profile ($name, $issue, $desc);
+    console.log($name, $issue, $desc);
+    console.log(newUser);
     ref.push(newUser);
   })
 };
+
+getFormData();

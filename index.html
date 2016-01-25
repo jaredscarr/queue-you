@@ -20,16 +20,16 @@
       </section>
       <section id="student">
         <form>
-          <fieldset>
-            <legend>What's Your Problem?</legend>
-            <input type="checkbox" value="1">Git Issue</br>
-            <input type="checkbox" value="1">JavaScript</br>
-            <input type="checkbox" value="1">CSS</br>
-            <input type="checkbox" value="1">Brain No Work Good</br>
-            <p>Briefly Describe Your Problem:</p>
-            <input type="text"></br>
-            <input id="submit-button"type="submit" value="Submit" >
-          </fieldset>
+          <h4>What's Your Name?</h4>
+            <input id="name" type="text"></br>
+          <h4>What's Your Problem?</h4>
+          <input type="radio" value="1">Git Issue</br>
+          <input type="radio" value="1">JavaScript</br>
+          <input type="radio" value="1">CSS</br>
+          <input type="radio" value="1">Brain No Work Good</br>
+          <p>Briefly Describe Your Problem:</p>
+          <input id="desc" type="text"></br>
+          <input id="submit-button" type="submit" value="Submit" >
         </form>
         <h3>While you wait, have you tried these resources?</h3>
           <ul>
@@ -55,6 +55,7 @@
 
   <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
   <script src="vendor/scripts/jquery-1.11.3.js"></script>
+  <script src="scripts/dataGrab.js"></script>
   <script src="scripts/landing.js"></script>
   <script src="scripts/studentView.js"></script>
 
