@@ -1,6 +1,6 @@
 // var Firebase = require('firebase');
 
-var ref = new Firebase('https://queue-you.firebasio.com/');
+var ref = new Firebase('https://queue-you.firebaseio.com/');
 
 function Profile(name, issue, desc) {
   this.name = name;
@@ -17,7 +17,11 @@ var getFormData = function() {
     var newUser = new Profile ($name, $issue, $desc);
     console.log($name, $issue, $desc);
     console.log(newUser);
-    ref.push(newUser);
+    var usersRef = ref.child('users');
+    var newUserRef = usersRef.push();
+    newUserRef.set(newUser);
+
+    // usersRef.push(newUser);
   })
 };
 
