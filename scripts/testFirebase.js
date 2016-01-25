@@ -62,4 +62,3 @@ db.signUp();
 
   // module.theDatabase = theDatabase;
   // firebase.ref = ref;
-// })(window);
