@@ -1,11 +1,25 @@
-#teacher-button {
-  color: #5BC3EB;
+body {
+  background-color: #EDE6E3;
+  color: #36382E;
 }
 
-#student-button {
-  color: #F06449;
+header {
+  background-color: #F06449;
+  text-align: center;
 }
 
-/*#panic-button {
-  color: red;
-}*/
+footer {
+  background-color: #5BC3EB;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}

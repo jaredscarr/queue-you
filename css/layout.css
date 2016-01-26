@@ -1,31 +1,46 @@
-body {
-  background-color: #EDE6E3;
-  color: #36382E;
+@media (min-width: 320px) {
+  #teacher-button {
+   height: 27vh;
+  }
+  #student-button {
+   height: 27vh;
+  }
 }
 
-header {
-  background-color: #F06449;
+ @media (min-width: 400px) {
+  #teacher-button {
+   height: 33vh;
+  }
+
+  #student-button {
+   height: 33vh;
+  }
 }
 
-footer {
-  background-color: #5BC3EB;
+@media (min-width: 550px) {
+  #teacher-button {
+   height: 69rem;
+  }
+
+  #student-button {
+   height: 69rem;
+  }
 }
 
-#teacher-button {
-  color: #5BC3EB;
+@media (min-width: 750px) {
+  #teacher-button {
+   height: 75vh;
+  }
+
+  #student-button {
+   height: 75vh;
+  }
 }
 
-#student-button {
-  color: #F06449;
+/*@media (min-width: 1000px) {
+
 }
 
-#panic-button {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-color: red;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 0 0 3px grey;
-  font-weight: bold;
-}
+@media (min-width: 1200px) {
+
+}*/
