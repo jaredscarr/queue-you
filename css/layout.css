@@ -1,19 +1,37 @@
 @media (min-width: 400px) {
+  #teacher-button {
+   height: 17rem;
+ }
 
+ #student-button {
+   height: 17rem;
+ }
 }
 
 @media (min-width: 550px) {
+  #teacher-button {
+   height: 42rem;
+ }
 
+ #student-button {
+   height: 42rem;
+ }
 }
 
 @media (min-width: 750px) {
+  #teacher-button {
+   height: 46rem;
+ }
 
+ #student-button {
+   height: 46rem;
+ }
 }
 
-@media (min-width: 1000px) {
+/*@media (min-width: 1000px) {
 
 }
 
 @media (min-width: 1200px) {
 
-}
+}*/
