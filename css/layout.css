@@ -1,31 +1,40 @@
-@media (min-width: 400px) {
+@media (min-width: 320px) {
   #teacher-button {
-   height: 17rem;
- }
+   height: 27vh;
+  }
+  #student-button {
+   height: 27vh;
+  }
+}
 
- #student-button {
-   height: 17rem;
- }
+ @media (min-width: 400px) {
+  #teacher-button {
+   height: 33vh;
+  }
+
+  #student-button {
+   height: 33vh;
+  }
 }
 
 @media (min-width: 550px) {
   #teacher-button {
-   height: 42rem;
- }
+   height: 69rem;
+  }
 
- #student-button {
-   height: 42rem;
- }
+  #student-button {
+   height: 69rem;
+  }
 }
 
 @media (min-width: 750px) {
   #teacher-button {
-   height: 46rem;
- }
+   height: 75vh;
+  }
 
- #student-button {
-   height: 46rem;
- }
+  #student-button {
+   height: 75vh;
+  }
 }
 
 /*@media (min-width: 1000px) {
