@@ -2,13 +2,15 @@
 
   var studentView = {};
 
-  studentView.showForm = function() {
-    $('#student-button').on('click', function() {
+  studentView.waiting = function() {
+    $('#submit-button').on('click', function(e) {
+      e.preventDefault();
       $('#student').show().siblings().hide();
+      // $('#student').show();
     });
   };
 
-  studentView.showForm();
+  studentView.waiting();
 
   module.studentView = studentView;
 })(window);
