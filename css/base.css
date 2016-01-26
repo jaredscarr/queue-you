@@ -1,0 +1,40 @@
+body {
+  background-color: #EDE6E3;
+  color: #36382E;
+}
+
+h1, h2 {
+  padding: 5%;
+}
+
+#student {
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+#teacher {
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+header {
+  background-color: #F06449;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+footer {
+  background-color: #5BC3EB;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}

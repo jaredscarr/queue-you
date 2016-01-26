@@ -38,7 +38,7 @@ Daily Work Tasks
 Start of Day
 
 Check Slack communication
-Pull down most recent push to the developer branch: git pull origin developer <-- NOT MASTER
+Pull down most recent push to the developer branch: git pull origin development <-- NOT MASTER
 Standup around 9:10am
 
 Throughout the Day
