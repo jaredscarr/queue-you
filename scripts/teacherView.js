@@ -22,7 +22,9 @@
 
   teacherView.post = function(){
     for (var i = 0; i < profileList.length; i++) {
-      $('ol').append('<li>' + profileList[i].name + '</li');
+      $('ol').append('<li>Name: ' + profileList[i].name + '</br>' +
+      profileList[i].issue + '</br>' +
+      profileList[i].desc +'</br>' + '</br>' + '</li');
     }
   };
   //   profileList.forEach(function(name, issue, desc) {
