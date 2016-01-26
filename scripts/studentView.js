@@ -7,9 +7,8 @@
       $('#student').show().siblings().hide();
     });
   };
-  
-  studentView.showForm();
 
+  studentView.showForm();
 
   module.studentView = studentView;
 })(window);

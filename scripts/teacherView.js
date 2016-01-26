@@ -7,9 +7,9 @@
   teacherView.showList = function() {
     $('#teacher-button').on('click', function() {
       $('#teacher').show().siblings().hide();
+      teacherView.post();
     });
   };
-
 
   teacherView.storagePull = function(){
     ref.on('child_added', function(snapshot, prevChildKey){
@@ -18,6 +18,17 @@
       profileList.push(snapshot.val());
     });
   };
+
+
+  teacherView.post = function(){
+    for (var i = 0; i < profileList.length; i++) {
+      $('ol').append('<li>' + profileList[i].name + '</li');
+    }
+  };
+  //   profileList.forEach(function(name, issue, desc) {
+  //     $('ol').append('<li>' + this.name + this.issue + this.desc + '</li>').toHtml();
+  //   });
+  // };
 
 
   teacherView.showList();
