@@ -19,12 +19,12 @@ function Profile (name, issue, desc) {
 
 var getFormData = function() {
   $('#').on('click', function(e) {
-    $name
-    $issue
-    $desc
+    $name;
+    $issue;
+    $desc;
     var newUser = new Profile($name, $issue, $desc);
     ref.push(newUser);
-  })
+  });
 };
 
 // var pushProfile = function(profile) {
