@@ -1,7 +1,7 @@
 // (function(module) {
 
   var teacherView = {};
-  var ref = new Firebase('https://queue-you.firebaseio.com/users');
+  var ref = new Firebase('https://queue-you.firebaseio.com/');
   var profileList = [];
 
   teacherView.showList = function() {
