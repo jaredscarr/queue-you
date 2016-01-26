@@ -3,6 +3,15 @@ body {
   color: #36382E;
 }
 
+#student {
+  padding-left: 10%;
+}
+
+#teacher {
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
 header {
   background-color: #F06449;
   text-align: center;
