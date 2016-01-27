@@ -53,11 +53,15 @@ main {
 
 form {
   padding-left: 10%;
+  border: 2px blue solid;
+  width: 60%;
 }
 
-.resources {
+#resources {
   padding-left: 10%;
   display: inline-block;
+  border: 2px black solid;
+  width: 40%;
 }
 
 #resource-links {
