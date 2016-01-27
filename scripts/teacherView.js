@@ -4,6 +4,8 @@
   var ref = new Firebase('https://queue-you.firebaseio.com/');
   var ref2 = new Firebase('https://queue-you.firebaseio.com/users');
   var profileList = [];
+  var keys = [];
+
 
   teacherView.showList = function() {
     $('#teacher-button').on('click', function() {
@@ -31,7 +33,10 @@
     ref2.on('child_added', function(snapshot, prevChildKey){
       var newPost = snapshot.val();
       console.log(newPost);
+      console.log(snapshot.key());
       profileList.push(snapshot.val());
+      keys.push(snapshot.key());
+
     });
   };
 
@@ -50,7 +55,9 @@
   // };
   teacherView.remove = function() {
     $('li').click(function() {
-      $( this ).remove();
+      $(this).remove();
+      // ref2.child.key.remove();
+
     });
   };
 
