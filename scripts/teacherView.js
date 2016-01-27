@@ -6,32 +6,18 @@
   teacherView.showList = function() {
     $('#teacher-button').on('click', function() {
       $('#teacher').show().siblings().hide();
-      teacherView.post();
+      // teacherView.post();
     });
   };
 
-
-  /////////////////////////////////////
-
-
-  teacherView.test = function() {
-    $('#teacher-test').on('click', function() {
-      // e.preventDefault();
-      $('#form').show().siblings().hide();
-    });
-  };
-
-
-  /////////////////////////////////////
-
-
-  teacherView.storagePull = function(){
-    ref.on('value', function(snapshot, prevChildKey) { //change back to child-append
-      var newStudent = snapshot.val();
-      console.log(newStudent);
-      console.log(snapshot);
-    });
-  };
+  // teacherView.storagePull = function(){
+  //   ref.on('value', function(snapshot, prevChildKey) { //change back to child-append
+  //     var newStudent = snapshot.val();
+  //     turtle = newStudent;
+  //     console.log(turtle);
+  //     console.log(newStudent);
+  //   });
+  // };
 
 
   // teacherView.post = function(){
@@ -44,7 +30,7 @@
 
 
   teacherView.showList();
-  teacherView.storagePull();
-  teacherView.test();
+  // teacherView.storagePull();
+
 //   module.teacherView = teacherView;
 // })(window);

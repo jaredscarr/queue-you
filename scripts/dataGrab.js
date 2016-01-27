@@ -15,13 +15,9 @@ var getFormData = function() {
     $issue = $('input:checked').val();
     $desc = $('#desc').val();
     var newUser = new Profile ($name, $issue, $desc);
-    console.log($name, $issue, $desc);
-    console.log(newUser);
     var usersRef = ref.child('users');
     var newUserRef = usersRef.push();
     newUserRef.set(newUser);
-
-    // usersRef.push(newUser);
   });
 };
 
