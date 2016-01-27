@@ -3,6 +3,7 @@
   var db = {};
   //reference to firebase
   var ref = new Firebase('https://queue-you.firebaseio.com/');
+  var ref2 = new Firebase('https://queue-you.firebaseio.com/users');
 
   //get snapshot of the database
   // db.getSnap = function() {
@@ -37,10 +38,11 @@
   //on child removed
 
   db.childRemoved = function(){
-    ref.on('child_removed', function(snapshot, prevChildKey) {
+    ref2.on('child_removed', function(snapshot, prevChildKey) {
       var newStudent = snapshot.val();
       rabbit = newStudent;
       console.log('rabbit' + rabbit);
+      
     });
   };
 
