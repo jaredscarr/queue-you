@@ -1,22 +1,20 @@
 // (function(module) {
 
   var teacherView = {};
-  var ref = new Firebase('https://queue-you.firebaseio.com/users');
-  var profileList = [];
+  var ref = new Firebase('https://queue-you.firebaseio.com/');
 
   teacherView.showList = function() {
     $('#teacher-button').on('click', function() {
       $('#teacher').show().siblings().hide();
-      // teacherView.post();
+      teacherView.post();
     });
   };
 
   teacherView.storagePull = function(){
-    ref.on('child_added', function(snapshot, prevChildKey){
+    ref.on('value', function(snapshot, prevChildKey) { //change back to child-append
       var newStudent = snapshot.val();
       console.log(newStudent);
-      // profileList.push(snapshot.val());
-      console.log('Name: ' + newStudent.name);
+      console.log(snapshot);
     });
   };
 
@@ -27,10 +25,6 @@
   //     profileList[i].issue + '</br>' +
   //     profileList[i].desc +'</br>' + '</br>' + '</li');
   //   }
-  // };
-  //   profileList.forEach(function(name, issue, desc) {
-  //     $('ol').append('<li>' + this.name + this.issue + this.desc + '</li>').toHtml();
-  //   });
   // };
 
 
