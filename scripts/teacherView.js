@@ -40,14 +40,19 @@
     for (var i = 0; i < profileList.length; i++) {
       $('ol').append('<li>Name: ' + profileList[i].name + '</br>' +
       profileList[i].issue + '</br>' +
-      profileList[i].desc +'</br>' + '</br>' + '</li');
+      profileList[i].desc +'</br>' + '</br>' + '</li>');
+      teacherView.remove();
     }
   };
   //   profileList.forEach(function(name, issue, desc) {
   //     $('ol').append('<li>' + this.name + this.issue + this.desc + '</li>').toHtml();
   //   });
   // };
-
+  teacherView.remove = function() {
+    $('li').click(function() {
+      $( this ).remove();
+    });
+  };
 
   teacherView.showList();
   teacherView.storagePull();
