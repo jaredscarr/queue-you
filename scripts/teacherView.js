@@ -1,4 +1,4 @@
-// (function(module) {
+(function(module) {
 
   var teacherView = {};
   var ref = new Firebase('https://queue-you.firebaseio.com/');
@@ -37,6 +37,8 @@
       // console.log(snapshot.key());
       profileList.push(snapshot.val());
       keys.push(snapshot.key());
+      console.log(profileList);
+      console.log(keys);
 
     });
   };
@@ -73,5 +75,6 @@
   teacherView.showList();
   teacherView.storagePull();
   teacherView.test();
-//   module.teacherView = teacherView;
-// })(window);
+  
+  module.teacherView = teacherView;
+})(window);
