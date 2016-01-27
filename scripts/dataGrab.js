@@ -22,7 +22,7 @@ var getFormData = function() {
     newUserRef.set(newUser);
 
     // usersRef.push(newUser);
-  })
+  });
 };
 
 getFormData();

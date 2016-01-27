@@ -10,6 +10,21 @@
     });
   };
 
+
+  /////////////////////////////////////
+
+
+  teacherView.test = function() {
+    $('#teacher-test').on('click', function() {
+      // e.preventDefault();
+      $('#form').show().siblings().hide();
+    });
+  };
+
+
+  /////////////////////////////////////
+
+
   teacherView.storagePull = function(){
     ref.on('value', function(snapshot, prevChildKey) { //change back to child-append
       var newStudent = snapshot.val();
@@ -30,6 +45,6 @@
 
   teacherView.showList();
   teacherView.storagePull();
-
+  teacherView.test();
 //   module.teacherView = teacherView;
 // })(window);
