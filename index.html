@@ -12,8 +12,8 @@
   </head>
   <body>
       <header>
-        <h1>Welcome to Queue-You</h1>
-        <h4>Bringing Students and Teachers Together, Today!</h4>
+          <h1>Welcome to Queue-You</h1>
+          <h4>Bringing Students and Teachers Together, Today!</h4>
       </header>
       <nav>
         <button id="teacher-test"type="button" name="Teacher Button">Teacher Button</button>
@@ -43,28 +43,34 @@
             <input id="desc" type="text"></br>
             <input id="submit-button" type="submit" value="Submit" >
           </form>
-          <h3>While you wait, have you tried these resources?</h3>
-            <ul>
-              <li>Google</li>
-              <li>Stack Overflow</li>
-              <li>MDN</li>
-              <li>jQuery Cheatsheet</li>
-              <li>Github Cheatsheet</li>
-              <li>RickRoll</li>
-            </ul>
+          <div class="resources">
+            <h3>While you wait, have you tried these resources?</h3>
+              <ul id="resource-links">
+                <li><a href="http://lmgtfy.com/?q=Have+I+googled+my+question+yet%3F">Google</a></li>
+                <li><a href="http://lmgtfy.com/?q=stackoverflow%3F">Stack Overflow</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">Mozilla Development Network (MDN)</a></li>
+                <li><a href="https://oscarotero.com/jquery/">jQuery Cheatsheet</a></li>
+                <li><a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf">Github Cheatsheet</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Instant Success</a></li>
+              </ul>
             <button type="button" id="panic-button">PANIC</button>
+          </div>
         </section>
         <section id="student">
 
         </section>
         <section id="teacher">
-          <ol>
-          </ol>
+          <div class="list">
+            <ol>
+              <li>Hello</li>
+              <li>This is a list of things</li>
+            </ol>
+          </div>
           <section id="onestudentinfo">
           </section>
         </section>
       </main>
-  <footer id="footer">
+  <footer>
     <p>If You're Not Happy, Get In Line</p>
     <p>&copy 2016 Queue-you</p>
   </footer>
