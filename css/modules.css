@@ -26,3 +26,14 @@
   /*box-shadow: 0 0 3px grey;*/
   font-weight: bold;
 }
+
+.row {
+  padding-top: 5%;
+}
+
+/*#deskImg {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  opacity: 10%;
+}*/
