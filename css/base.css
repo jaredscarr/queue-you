@@ -7,14 +7,8 @@ h1, h2 {
   padding: 5%;
 }
 
-#student {
-  /*padding-top: 10%;
-  padding-left: 10%;*/
-}
-
 #teacher {
-  padding-top: 10%;
-  padding-left: 10%;
+  padding: 10%;
 }
 
 header {
@@ -25,10 +19,6 @@ header {
   background: url('../images/desk.png') no-repeat;
   background-size: cover;
   text-shadow: 2px 2px 4px #000000;
-}
-
-#headers {
-  /*opacity: .7;*/
 }
 
 footer {
@@ -64,5 +54,11 @@ form {
 
 #resource-links {
   text-decoration: none;
+}
 
+.queue-view {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 250px;
+  overflow: scroll;
 }
