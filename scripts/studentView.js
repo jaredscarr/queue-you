@@ -6,27 +6,17 @@
     $('#submit-button').on('click', function(e) {
       e.preventDefault();
       $('#student').show().siblings().hide();
-      // $('#student').show();
     });
   };
 
-//   /////////////////////////////////////
-//
-//
-//
-//   studentView.test = function() {
-//     $('#student-test').on('click', function(e) {
-//       e.preventDefault();
-//       $('#teacher').show().siblings().hide();
-//       teacherView.post();
-//     });
-//   };
-//
-//
-// /////////////////////////////////////
+
+  studentView.showOnSelect = function() {
+    $('#').on('click', function() {
+      $('#mypage').show().siblings().hide();
+    });
+  };
 
   studentView.waiting();
-  // studentView.test();
 
   module.studentView = studentView;
 })(window);
