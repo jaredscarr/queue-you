@@ -44,12 +44,13 @@
       $('ol').append('<li>Name: ' + profileList[i].name + '</br>Category: ' +
       profileList[i].issue + '</br>Description: ' +
       profileList[i].desc +'</br>' + '</br>' + '</li>');
-      teacherView.selected();
+      teacherView.removeFromdb();
+      // teacherView.selected();
     }
   };
 
   teacherView.removeFromdb = function() {
-    $('#chosen').on('click', function(e) { //on button click remove from db
+    $('li').on('click', function(e) { //on button click remove from db
       // teacherView.dataSync();
       e.preventDefault();
       var $key = $(this).index();
@@ -57,29 +58,41 @@
       var deleteRef = new Firebase('https://queue-you.firebaseio.com/users/' + keys[$key]);
       deleteRef.remove();
       $(this).remove();
+      console.log(this);
     });
   };
+  // teacherView.removeFromdb = function() {
+  //   $('#chosen').on('click', function(e) { //on button click remove from db
+  //     // teacherView.dataSync();
+  //     e.preventDefault();
+  //     var $key = $(this).index();
+  //     console.log($key);
+  //     var deleteRef = new Firebase('https://queue-you.firebaseio.com/users/' + keys[$key]);
+  //     deleteRef.remove();
+  //     $(this).remove();
+  //   });
+  // };
 
-  teacherView.selected = function() {
-    $('li').on('click', function(e) {
-      teacherView.dataSync();
-      e.preventDefault();
-      var $chosen = $(this).clone();
-      $(this).hide();
-      $('#current').show();
-      $('#chosen-one').append($chosen).show();
-      $('#chosen-one li').attr('id', 'chosen');
-      // var $key = $(this).index();
-      // console.log($key);
-      // var deleteRef = new Firebase('https://queue-you.firebaseio.com/users/' + keys[$key]);
-      // deleteRef.remove();
-      // $(this).remove();
-      teacherView.removeFromdb();
-    });
-  };
+  // teacherView.selected = function() {
+  //   $('li').on('click', function(e) {
+  //     teacherView.dataSync();
+  //     e.preventDefault();
+  //     var $chosen = $(this).clone();
+  //     $(this).hide();
+  //     $('#current').show();
+  //     $('#chosen-one').append($chosen).show();
+  //     $('#chosen-one li').attr('id', 'chosen');
+  //     var $key = $(this).index();
+  //     console.log($key);
+  //     var deleteRef = new Firebase('https://queue-you.firebaseio.com/users/' + keys[$key]);
+  //     deleteRef.remove();
+  //     $(this).remove();
+  //     teacherView.removeFromdb();
+  //   });
+  // };
 
   teacherView.showList();
-  teacherView.selected();
+  // teacherView.selected();
   teacherView.storagePull();
   module.teacherView = teacherView;
 })(window);
