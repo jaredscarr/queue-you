@@ -52,7 +52,7 @@
   teacherView.removeFromdb = function() {
     $('li').on('click', function(e) { //on button click remove from db
       // teacherView.dataSync();
-      e.preventDefault();
+      // e.preventDefault();
       var $key = $(this).index();
       console.log($key);
       var deleteRef = new Firebase('https://queue-you.firebaseio.com/users/' + keys[$key]);
