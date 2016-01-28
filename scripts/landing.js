@@ -9,6 +9,7 @@
   landingView.nav = function() {
     $('header').on('click', function(e) {
       e.preventDefault();
+      $('ol').empty();
       $('#landing').show().siblings().hide();
     });
   };

@@ -67,11 +67,6 @@
 
   teacherView.showList();
   teacherView.storagePull();
-<<<<<<< HEAD
-  teacherView.test();
-  
-=======
-  // teacherView.test();
->>>>>>> 8953392ecc05f98b63c976acc4205c40a36b5cf6
+
   module.teacherView = teacherView;
 })(window);
