@@ -10,8 +10,17 @@
   var profileList = [];
   var keys = [];
 
+  teacherView.dataSync = function() {
+    ref2.on('value', function(snapshot) {
+      console.log('yup');
+    }), function (errorObject) {
+      console.log('nope');
+    };
+  };
+
   teacherView.showList = function() {
     $('#teacher-button').on('click', function(e) {
+      teacherView.dataSync();
       e.preventDefault();
       $('#teacher').show().siblings().hide();
       $('#chosen-one').hide();
@@ -29,35 +38,42 @@
       // storeLocal(userid);
     });
   };
+
   teacherView.post = function(){
     for (var i = 0; i < profileList.length; i++) {
-      $('ol').append('<li>Name: ' + profileList[i].name + '</br>' +
-      profileList[i].issue + '</br>' +
+      $('ol').append('<li>Name: ' + profileList[i].name + '</br>Category: ' +
+      profileList[i].issue + '</br>Description: ' +
       profileList[i].desc +'</br>' + '</br>' + '</li>');
       teacherView.selected();
     }
   };
 
-  teacherView.removeFromdb = function() {
-    $('#chosen').on('click', function(e) { //on button click remove from db
+  // teacherView.removeFromdb = function() {
+  //   $('#chosen').on('click', function(e) { //on button click remove from db
+  //     e.preventDefault();
+  //     var $key = $(this).index();
+  //     console.log($key);
+  //     var deleteRef = new Firebase('https://queue-you.firebaseio.com/users/' + keys[$key]);
+  //     deleteRef.remove();
+  //     $(this).remove();
+  //   });
+  // };
+
+  teacherView.selected = function() {
+    $('li').on('click', function(e) {
+      teacherView.dataSync();
       e.preventDefault();
+      var $chosen = $(this).clone();
+      // $(this).hide();
+      $('#current').show();
+      $('#chosen-one').append($chosen).show();
+      $('#chosen-one li').attr('id', 'chosen');
       var $key = $(this).index();
       console.log($key);
       var deleteRef = new Firebase('https://queue-you.firebaseio.com/users/' + keys[$key]);
       deleteRef.remove();
       $(this).remove();
-    });
-  };
-
-  teacherView.selected = function() {
-    $('li').on('click', function(e) {
-      e.preventDefault();
-      var $chosen = $(this).clone();
-      $(this).hide();
-      $('#current').show();
-      $('#chosen-one').append($chosen).show();
-      $('#chosen-one li').attr('id', 'chosen');
-      teacherView.removeFromdb();
+      // teacherView.removeFromdb();
     });
   };
 
