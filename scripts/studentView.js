@@ -6,7 +6,6 @@
     $('#submit-button').on('click', function(e) {
       e.preventDefault();
       $('#student').show().siblings().hide();
-      // $('#student').show();
     });
   };
 
