@@ -6,6 +6,14 @@
     $('#landing').show().siblings().hide();
   };
 
+  landingView.nav = function() {
+    $('header').on('click', function(e) {
+      e.preventDefault();
+      $('#landing').show().siblings().hide();
+    });
+  };
+
+  landingView.nav();
   landingView.initPage();
 
   module.landingView = landingView;

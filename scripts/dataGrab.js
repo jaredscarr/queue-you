@@ -20,8 +20,6 @@ var getFormData = function() {
     var usersRef = ref.child('users');
     var newUserRef = usersRef.push();
     newUserRef.set(newUser);
-
-    // usersRef.push(newUser);
   });
 };
 
