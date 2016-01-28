@@ -3,7 +3,6 @@
   var teacherView = {};
   var ref = new Firebase('https://queue-you.firebaseio.com/');
   var ref2 = new Firebase('https://queue-you.firebaseio.com/users/');
-  // var ref3 = new Firebase('https://queue-you.firebaseio.com/users/-K93F-mA76dCgyazMeEG');
   var profileList = [];
   var keys = [];
 
@@ -16,25 +15,23 @@
   };
 
 
-  /////////////////////////////////////
-
-
-  teacherView.test = function() {
-    $('#teacher-test').on('click', function() {
-      // e.preventDefault();
-      $('#form').show().siblings().hide();
-    });
-  };
-
-
-  /////////////////////////////////////
+  // /////////////////////////////////////
+  //
+  //
+  // teacherView.test = function() {
+  //   $('#teacher-test').on('click', function() {
+  //     // e.preventDefault();
+  //     $('#form').show().siblings().hide();
+  //   });
+  // };
+  //
+  //
+  // /////////////////////////////////////
 
 
   teacherView.storagePull = function(){
     ref2.on('child_added', function(snapshot, prevChildKey){
       var newPost = snapshot.val();
-      // console.log(newPost);
-      // console.log(snapshot.key());
       profileList.push(snapshot.val());
       keys.push(snapshot.key());
       console.log(profileList);
@@ -52,10 +49,7 @@
       teacherView.remove();
     }
   };
-  //   profileList.forEach(function(name, issue, desc) {
-  //     $('ol').append('<li>' + this.name + this.issue + this.desc + '</li>').toHtml();
-  //   });
-  // };
+
   teacherView.remove = function() {
     $('li').click(function() {
       var $key = $(this).index();
@@ -68,13 +62,16 @@
       $(this).remove();
 
 
-      // ref2.child.key.remove();
     });
   };
 
   teacherView.showList();
   teacherView.storagePull();
+<<<<<<< HEAD
   teacherView.test();
   
+=======
+  // teacherView.test();
+>>>>>>> 8953392ecc05f98b63c976acc4205c40a36b5cf6
   module.teacherView = teacherView;
 })(window);
