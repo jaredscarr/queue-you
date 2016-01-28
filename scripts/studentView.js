@@ -10,23 +10,23 @@
     });
   };
 
-  /////////////////////////////////////
-
-
-
-  studentView.test = function() {
-    $('#student-test').on('click', function(e) {
-      e.preventDefault();
-      $('#teacher').show().siblings().hide();
-      teacherView.post();
-    });
-  };
-
-
-/////////////////////////////////////
+//   /////////////////////////////////////
+//
+//
+//
+//   studentView.test = function() {
+//     $('#student-test').on('click', function(e) {
+//       e.preventDefault();
+//       $('#teacher').show().siblings().hide();
+//       teacherView.post();
+//     });
+//   };
+//
+//
+// /////////////////////////////////////
 
   studentView.waiting();
-  studentView.test();
+  // studentView.test();
 
   module.studentView = studentView;
 })(window);
