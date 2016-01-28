@@ -52,7 +52,7 @@
 
 // modifying above to remove from different part of page
   teacherView.removeFromdb = function() {
-    $('#solved').on('click', function(e) { //on button click remove from db
+    $('#chosen').on('click', function(e) { //on button click remove from db
       e.preventDefault();
       var $key = $(this).index();
       console.log($key);
@@ -70,6 +70,7 @@
       $(this).hide();
       $('#current').show();
       $('#chosen-one').append($chosen).show();
+      $('#chosen-one li').attr('id', 'chosen');
       teacherView.removeFromdb();
     });
   };
