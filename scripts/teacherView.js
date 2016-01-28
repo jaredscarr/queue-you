@@ -50,7 +50,7 @@
 
   teacherView.removeFromdb = function() {
     $('#chosen').on('click', function(e) { //on button click remove from db
-      teacherView.dataSync();
+      // teacherView.dataSync();
       e.preventDefault();
       var $key = $(this).index();
       console.log($key);
