@@ -1,0 +1,66 @@
+body {
+  background-color: white;
+  color: #36382E;
+}
+
+h1, h2 {
+  padding: 5%;
+}
+
+#student {
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+#teacher {
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+header {
+  text-align: center;
+  font-family: helvetica;
+  color: white;
+  padding-bottom: 5%;
+  background: url('../images/desk.png') no-repeat;
+  background-size: cover;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#headers {
+  /*opacity: .7;*/
+}
+
+footer {
+  background-color: #5BC3EB;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+main {
+  min-height: 450px;
+}
+
+form {
+  padding-left: 10%;
+}
+
+.resources {
+  padding-left: 10%;
+  display: inline-block;
+}
+
+#resource-links {
+  text-decoration: none;
+
+}

@@ -1,0 +1,41 @@
+#teacher-button {
+  background: #EDE6E3;
+  width: 100%;
+  /*height: 17rem;*/
+  margin: 0;
+  border-radius: 5%;
+  font-size: 12pt;
+}
+
+#student-button {
+  background: #DADAD9;
+  width: 100%;
+  /*height: 17rem;*/
+  margin: 0;
+  border-radius: 5%;
+  font-size: 12pt;
+}
+
+#panic-button {
+  display: inline-block;
+  /*width: 50px;
+  height: 50px;*/
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  /*box-shadow: 0 0 3px grey;*/
+  font-weight: bold;
+}
+
+.row {
+  padding-top: 5%;
+}
+
+#deskImg {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  background-size: cover;
+  /*opacity: .7;*/
+}
