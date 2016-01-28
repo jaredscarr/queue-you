@@ -13,6 +13,8 @@
   teacherView.dataSync = function() {
     ref2.on('value', function(snapshot) {
       console.log('yup');
+      $('ol').empty();
+      teacherView.post();
     }), function (errorObject) {
       console.log('nope');
     };
@@ -25,7 +27,7 @@
       $('#teacher').show().siblings().hide();
       $('#chosen-one').hide();
       $('#current').hide();
-      teacherView.post();
+      // teacherView.post();
     });
   };
 
@@ -46,32 +48,32 @@
     }
   };
 
-  // teacherView.removeFromdb = function() {
-  //   $('#chosen').on('click', function(e) { //on button click remove from db
-  //     e.preventDefault();
-  //     var $key = $(this).index();
-  //     console.log($key);
-  //     var deleteRef = new Firebase('https://queue-you.firebaseio.com/users/' + keys[$key]);
-  //     deleteRef.remove();
-  //     $(this).remove();
-  //   });
-  // };
+  teacherView.removeFromdb = function() {
+    $('#chosen').on('click', function(e) { //on button click remove from db
+      e.preventDefault();
+      var $key = $(this).index();
+      console.log($key);
+      var deleteRef = new Firebase('https://queue-you.firebaseio.com/users/' + keys[$key]);
+      deleteRef.remove();
+      $(this).remove();
+    });
+  };
 
   teacherView.selected = function() {
     $('li').on('click', function(e) {
       teacherView.dataSync();
       e.preventDefault();
       var $chosen = $(this).clone();
-      // $(this).hide();
+      $(this).hide();
       $('#current').show();
       $('#chosen-one').append($chosen).show();
       $('#chosen-one li').attr('id', 'chosen');
-      var $key = $(this).index();
-      console.log($key);
-      var deleteRef = new Firebase('https://queue-you.firebaseio.com/users/' + keys[$key]);
-      deleteRef.remove();
-      $(this).remove();
-      // teacherView.removeFromdb();
+      // var $key = $(this).index();
+      // console.log($key);
+      // var deleteRef = new Firebase('https://queue-you.firebaseio.com/users/' + keys[$key]);
+      // deleteRef.remove();
+      // $(this).remove();
+      teacherView.removeFromdb();
     });
   };
 
