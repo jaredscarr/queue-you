@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/modules.css">
   </head>
   <body>
-      <header>
+    <header id="header">
           <h1>Welcome to Queue-You</h1>
           <h4>Bringing Students and Teachers Together, Today!</h4>
       </header>
@@ -31,7 +31,7 @@
           </div>
         </section>
         <section id="form">
-          <form>
+          <form class="two-thirds column">
             <h4>What's Your Name?</h4>
               <input id="name" type="text"></br>
             <h4>What's Your Problem?</h4>
@@ -43,7 +43,7 @@
             <input id="desc" type="text"></br>
             <input id="submit-button" type="submit" value="Submit" >
           </form>
-          <div class="resources">
+          <div id="resources" class="one-third column">
             <h3>While you wait, have you tried these resources?</h3>
               <ul id="resource-links">
                 <li><a href="http://lmgtfy.com/?q=Have+I+googled+my+question+yet%3F">Google</a></li>
@@ -71,10 +71,10 @@
           </section>
         </section>
       </main>
-  <footer>
-    <p>If You're Not Happy, Get In Line</p>
-    <p>&copy 2016 Queue-you</p>
-  </footer>
+    <footer>
+      <p>If You're Not Happy, Get In Line</p>
+      <p>&copy 2016 Queue-you</p>
+    </footer>
   <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
   <script src="vendor/scripts/jquery-1.11.3.js"></script>
   <script src="scripts/dataGrab.js"></script>
