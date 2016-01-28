@@ -15,18 +15,18 @@
   };
 
 
-  /////////////////////////////////////
-
-
-  teacherView.test = function() {
-    $('#teacher-test').on('click', function() {
-      // e.preventDefault();
-      $('#form').show().siblings().hide();
-    });
-  };
-
-
-  /////////////////////////////////////
+  // /////////////////////////////////////
+  //
+  //
+  // teacherView.test = function() {
+  //   $('#teacher-test').on('click', function() {
+  //     // e.preventDefault();
+  //     $('#form').show().siblings().hide();
+  //   });
+  // };
+  //
+  //
+  // /////////////////////////////////////
 
 
   teacherView.storagePull = function(){
@@ -65,6 +65,6 @@
 
   teacherView.showList();
   teacherView.storagePull();
-  teacherView.test();
+  // teacherView.test();
 //   module.teacherView = teacherView;
 // })(window);

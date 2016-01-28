@@ -31,9 +31,11 @@
   padding-top: 5%;
 }
 
-/*#deskImg {
-  position: relative;
+#deskImg {
+  display: block;
+  position: absolute;
   z-index: -1;
   width: 100%;
-  opacity: 10%;
-}*/
+  background-size: cover;
+  /*opacity: .7;*/
+}
