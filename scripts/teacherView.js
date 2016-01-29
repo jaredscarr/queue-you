@@ -1,4 +1,4 @@
-s(function(module) {
+(function(module) {
 
   var teacherView = {};
   var ref = new Firebase('https://queue-you.firebaseio.com/');
@@ -7,10 +7,8 @@ s(function(module) {
   var keys = [];
 
   teacherView.showList = function() {
-    $('#teacher-button').on('click', function(e) {
-      e.preventDefault();
+    $('#teacher-button').on('click', function() {
       $('#teacher').show().siblings().hide();
-      $('#chosen-one').hide();
       $('#current').hide();
       teacherView.post();
     });
@@ -21,44 +19,33 @@ s(function(module) {
       var newPost = snapshot.val();
       profileList.push(snapshot.val());
       keys.push(snapshot.key());
-      console.log(snapshot.key());
-      // storeLocal(userid);
+
     });
   };
+
   teacherView.post = function(){
     for (var i = 0; i < profileList.length; i++) {
       $('ol').append('<li>Name: ' + profileList[i].name + '</br>' +
       profileList[i].issue + '</br>' +
       profileList[i].desc +'</br>' + '</br>' + '</li>');
-      teacherView.selected();
+      teacherView.remove();
     }
   };
 
-  teacherView.removeFromdb = function() {
-    $('#chosen').on('click', function(e) { //on button click remove from db
-      e.preventDefault();
+  teacherView.remove = function() {
+    $('li').click(function() {
       var $key = $(this).index();
       console.log($key);
+      console.log(keys[$key]);
       var deleteRef = new Firebase('https://queue-you.firebaseio.com/users/' + keys[$key]);
+      console.log(deleteRef);
+      console.log($(this).index());
       deleteRef.remove();
       $(this).remove();
     });
   };
 
-  teacherView.selected = function() {
-    $('li').on('click', function(e) {
-      e.preventDefault();
-      var $chosen = $(this).clone();
-      $(this).hide();
-      $('#current').show();
-      $('#chosen-one').append($chosen).show();
-      $('#chosen-one li').attr('id', 'chosen');
-      teacherView.removeFromdb();
-    });
-  };
-
   teacherView.showList();
-  teacherView.selected();
   teacherView.storagePull();
   module.teacherView = teacherView;
 })(window);
