@@ -1,8 +1,4 @@
-// need to add to html:
-// 1. a div inside teacher view below the
-// ol tag that says current and has a ul tag with the id of chosen-one
-// p tag that says click to remove.
-(function(module) {
+s(function(module) {
 
   var teacherView = {};
   var ref = new Firebase('https://queue-you.firebaseio.com/');
