@@ -1,6 +1,6 @@
 {
   "firebase": "queue-you",
-  "public": "queue-you.firebaseio.com",
+  "public": "queue-you.firebaseapp.com",
   "ignore": [
     "firebase.json",
     "**/.*",
