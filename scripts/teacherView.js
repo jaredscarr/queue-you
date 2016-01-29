@@ -1,4 +1,4 @@
-s(function(module) {
+(function(module) {
 
   var teacherView = {};
   var ref = new Firebase('https://queue-you.firebaseio.com/');
