@@ -1,6 +1,6 @@
 {
   "firebase": "https://queue-you.firebaseio.com",
-  "public": "/Users/jrockscarr/Documents/code/codefellows/301/queue-you",
+  "public": "queue-you",
   "ignore": [
     "firebase.json",
     "**/.*",
