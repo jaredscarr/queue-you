@@ -1,6 +1,6 @@
 {
   "firebase": "https://queue-you.firebaseio.com",
-  "public": "/301/queue-you",
+  "public": "301/queue-you",
   "ignore": [
     "firebase.json",
     "**/.*",
