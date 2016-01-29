@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: white;
   color: #36382E;
@@ -7,19 +11,13 @@ h1, h2 {
   padding: 5%;
 }
 
-#student {
-  padding-top: 10%;
-  padding-left: 10%;
-}
-
 #teacher {
-  padding-top: 10%;
-  padding-left: 10%;
+  padding: 10%;
 }
 
 header {
   text-align: center;
-  font-family: 'open sans', helvetica, arial, sans;
+  font-family: helvetica;
   color: white;
   padding-bottom: 5%;
   background: url('../images/desk.png') no-repeat;
@@ -27,8 +25,12 @@ header {
   text-shadow: 2px 2px 4px #000000;
 }
 
-#headers {
-  opacity: .7;
+footer {
+  background-color: #8F94A5;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
 }
 
 p {
@@ -40,27 +42,37 @@ h4 {
 }
 
 main {
-  font-family: 'open sans', helvetica, arial, sans;
-  min-height: 900px;
+  min-height: 450px;
+
 }
 
 form {
-  padding-left: 10%;
-  border: 2px solid black;
-}
-
-footer {
-  background-color: #596F62;
-  text-align: center;
-  position: relative;
-  width: 100%;
+  padding-left: 5%;
+  padding-top: 5%
 }
 
 #resources {
-  display: inline-block;
-  border: 2px solid blue;
+  background-color: #C4BEC6;
+  text-align: center;
+  border-radius: 3%;
 }
 
 #resource-links {
-  text-decoration: none;
+
+}
+
+.queue-view {
+  border-bottom: 2px solid black;
+  height: 250px;
+  overflow: scroll;
+}
+
+.teacher-h4 {
+  box-shadow: inset 0px -4px 4px -4px;
+}
+
+#gif {
+  width: 95%;
+  padding-top: 2%;
+  padding-left: 2%;
 }

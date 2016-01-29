@@ -9,41 +9,49 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/modules.css">
+    <link rel="stylesheet" href="css/animate.css">
   </head>
-  <body>
+  <body class="animated fadeIn">
     <header id="header">
           <h1>Welcome to Queue-You</h1>
           <h4>Bringing Students and Teachers Together, Today!</h4>
-      </header>
-      <!-- <nav>
-        <button id="teacher-test"type="button" name="Teacher Button">Teacher Button</button>
-        <button id="student-test"type="button" name="Student Button">Student Button</button>
-      </nav> -->
-      <main>
-        <section id="landing">
-          <div class="row">
-            <div class="six columns">
-              <button id="teacher-button" type="button">Teacher</button>
-            </div>
-            <div class="six columns">
-              <button id="student-button" type="button">Student</button>
-            </div>
+    </header>
+    <main>
+      <section id="landing">
+        <div class="row">
+          <div class="one-half column padding">
+            <button id="teacher-button" type="button">Teacher</button>
           </div>
-        </section>
-        <section id="form">
-          <form class="two-thirds column">
-            <h4>What's Your Name?</h4>
-              <input id="name" type="text"></br>
-            <h4>What's Your Problem?</h4>
-            <input type="radio" name="checkbox" value="Git Issue">Git Issue</br>
-            <input type="radio" name="checkbox" value="JavaScript">JavaScript</br>
-            <input type="radio" name="checkbox" value="CSS">CSS</br>
-            <input type="radio" name="checkbox" value="Brain no Work Good">Brain No Work Good</br>
-            <p>Briefly Describe Your Problem:</p>
-            <input id="desc" type="text"></br>
-            <input id="submit-button" type="submit" value="Submit" >
-          </form>
-          <div id="resources" class="one-third column">
+          <div class="one-half column padding">
+            <button id="student-button" type="button">Student</button>
+          </div>
+        </div>
+      </section>
+      <section id="form" class="animated fadeIn">
+        <div class="row">
+          <div class="tweleve columns">
+            <form>
+              <h4>What's Your Name?</h4>
+                <input id="name" type="text"></br>
+              <h4>What's Your Problem?</h4>
+              <input type="radio" name="checkbox" value="Git Issue">Git Issue</br>
+              <input type="radio" name="checkbox" value="JavaScript">JavaScript</br>
+              <input type="radio" name="checkbox" value="CSS">CSS</br>
+              <input type="radio" name="checkbox" value="Brain no Work Good">Brain No Work Good</br>
+              <p>Briefly Describe Your Problem:</p>
+              <input id="desc" type="text"></br>
+              <input id="submit-button" type="submit" value="Submit" >
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="student" class="animated fadeIn">
+        <div class="row">
+          <div class="eight columns">
+            <img id="gif" src="images/help.gif" alt="Help Is On the Way"/>
+            <h1>Don't panic! We see you there!</h1>
+          </div>
+          <div id="resources" class="four columns">
             <h3>While you wait, have you tried these resources?</h3>
               <ul id="resource-links">
                 <li><a href="http://lmgtfy.com/?q=Have+I+googled+my+question+yet%3F">Google</a></li>
@@ -55,22 +63,23 @@
               </ul>
             <button type="button" id="panic-button">PANIC</button>
           </div>
-        </section>
-        <section id="student">
-
-        </section>
-        <section id="teacher">
-          <div class="list">
-            <ol></ol>
+        </div>
+      </section>
+      <section id="teacher" class="animated fadeIn">
+        <div class="row">
+          <div class="one-half column">
+            <div id="current">
+              <h4 class="teacher-h4 animated fadeIn">Current</h4>
+              <ul id="chosen-one" class="queue-view animated fadeIn"></ul>
+            </div>
           </div>
-          <div id="current">
-            <h4>Current</h4>
-            <ul id="chosen-one"></ul>
+            <div class="one-half column">
+              <h4 class="teacher-h4">Queue</h4>
+              <ol class="queue-view"></ol>
+            </div>
           </div>
-          <section id="onestudentinfo">
-          </section>
-        </section>
-      </main>
+      </section>
+    </main>
     <footer>
       <p>If You're Not Happy, Get In Line</p>
       <p>&copy 2016 Queue-you</p>

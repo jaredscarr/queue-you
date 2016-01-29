@@ -22,14 +22,20 @@
   font-weight: bold;
 }
 
-.row {
-  padding-top: 5%;
-}
-
 #deskImg {
   display: block;
   position: absolute;
   z-index: -1;
   width: 100%;
   background-size: cover;
+}
+
+#landing {
+  padding-top: 5%;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.padding {
+  padding-bottom: 5%;
 }

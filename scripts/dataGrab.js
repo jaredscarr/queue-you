@@ -1,5 +1,3 @@
-// var Firebase = require('firebase');
-
 var ref = new Firebase('https://queue-you.firebaseio.com/');
 
 function Profile(name, issue, desc) {
