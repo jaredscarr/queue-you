@@ -46,6 +46,8 @@
     padding-top: 35px;
     height: 0;
     overflow: hidden;
+    margin-top: 10%;
+    margin-left: 5%;
 }
 
 .video-container iframe {
