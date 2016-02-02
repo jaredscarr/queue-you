@@ -9,7 +9,6 @@
     });
   };
 
-
   studentView.showOnSelect = function() {
     $('#').on('click', function() {
       $('#mypage').show().siblings().hide();
