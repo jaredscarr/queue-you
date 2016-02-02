@@ -8,8 +8,8 @@
 
   teacherView.showList = function() {
     $('#teacher-button').on('click', function() {
-      $('#teacher').show().siblings().hide();
-      $('#current').hide();
+      // $('#teacher').show().siblings().hide();
+      // $('#current').hide();
       teacherView.post();
     });
   };
@@ -19,7 +19,6 @@
       var newPost = snapshot.val();
       profileList.push(snapshot.val());
       keys.push(snapshot.key());
-
     });
   };
 
@@ -35,17 +34,18 @@
   teacherView.remove = function() {
     $('li').click(function() {
       var $key = $(this).index();
-      console.log($key);
-      console.log(keys[$key]);
+      // console.log($key);
+      // console.log(keys[$key]);
       var deleteRef = new Firebase('https://queue-you.firebaseio.com/users/' + keys[$key]);
-      console.log(deleteRef);
-      console.log($(this).index());
+      // console.log(deleteRef);
+      // console.log($(this).index());
       deleteRef.remove();
       $(this).remove();
     });
   };
 
-  teacherView.showList();
+  // teacherView.showList();
+  teacherView.post();
   teacherView.storagePull();
   module.teacherView = teacherView;
 })(window);
