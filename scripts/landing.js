@@ -14,7 +14,7 @@
     });
   };
 
-  landingView.nav();
+  // landingView.nav();
   landingView.initPage();
 
   module.landingView = landingView;
