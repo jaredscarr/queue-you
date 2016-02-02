@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/jaredscarr/"
   },
-  "homepage": "queue-you.herokuapp.com",
+  "homepage": "https://queue-you.herokuapp.com",
   "dependencies": {
     "express": "^4.13.3",
     "express-request-proxy": "^1.0.11",
