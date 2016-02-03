@@ -12,24 +12,24 @@
     <link rel="stylesheet" href="css/animate.css">
   </head>
   <body class="animated fadeIn">
-    <header id="header">
+    <a href="/"><header id="header">
           <h1>Welcome to Queue-You</h1>
           <h4>Bringing Students and Teachers Together, Today!</h4>
-    </header>
+    </header></a>
     <main>
       <section id="landing">
         <div class="row">
           <div class="one-half column padding">
-            <button id="teacher-button" type="button">Teacher</button>
+            <a href="/teacher"><button id="teacher-button" type="button">Teacher</button></a>
           </div>
           <div class="one-half column padding">
-            <button id="student-button" type="button">Student</button>
+            <a href="/student"><button id="student-button" type="button">Student</button></a>
           </div>
         </div>
       </section>
       <section id="form" class="animated fadeIn">
         <div class="row">
-          <div class="tweleve columns">
+          <div class="twelve columns">
             <form>
               <h4>What's Your Name?</h4>
                 <input id="name" type="text"></br>
@@ -45,14 +45,12 @@
           </div>
         </div>
       </section>
-      <section id="student" class="animated fadeIn">
+      <a href="/student"><section id="student" class="animated fadeIn">
         <div class="row">
           <div class="eight columns">
-            <!-- <img id="gif" src="images/help.gif" alt="Help Is On the Way"/> -->
             <div class="video-container">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/dvC4Yu3ILUc" frameborder="0" allowfullscreen></iframe>
             </div>
-            <!-- <h1>Don't panic! We see you there!</h1> -->
           </div>
           <div id="resources" class="four columns">
             <h3>While you wait, have you tried these resources?</h3>
@@ -67,7 +65,7 @@
             <button type="button" id="panic-button">PANIC</button>
           </div>
         </div>
-      </section>
+      </section></a>
       <section id="teacher" class="animated fadeIn">
         <div class="row">
           <div class="one-half column">
@@ -88,11 +86,13 @@
       <p>&copy 2016 Queue-you</p>
     </footer>
   <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+  <script src="vendor/scripts/page.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
   <script src="scripts/dataGrab.js"></script>
   <script src="scripts/landing.js"></script>
   <script src="scripts/formView.js"></script>
   <script src="scripts/studentView.js"></script>
   <script src="scripts/teacherView.js"></script>
+  <script src="scripts/routes.js"></script>
   </body>
 </html>

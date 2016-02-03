@@ -8,8 +8,6 @@
 
   teacherView.showList = function() {
     $('#teacher-button').on('click', function() {
-      $('#teacher').show().siblings().hide();
-      $('#current').hide();
       teacherView.post();
     });
   };
@@ -19,7 +17,6 @@
       var newPost = snapshot.val();
       profileList.push(snapshot.val());
       keys.push(snapshot.key());
-
     });
   };
 
@@ -41,7 +38,7 @@
     });
   };
 
-  teacherView.showList();
+  teacherView.post();
   teacherView.storagePull();
   module.teacherView = teacherView;
 })(window);
