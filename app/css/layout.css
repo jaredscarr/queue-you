@@ -16,3 +16,31 @@
    height: 33vh;
   }
 }
+
+/*@media (min-width: 550px) {
+  #teacher-button {
+   height: 69rem;
+  }
+
+  #student-button {
+   height: 69rem;
+  }
+}*/
+
+/*@media (min-width: 750px) {
+  #teacher-button {
+   height: 75vh;
+  }
+
+  #student-button {
+   height: 75vh;
+  }
+}*/
+
+/*@media (min-width: 1000px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}*/

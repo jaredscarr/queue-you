@@ -1,0 +1,9 @@
+{
+  "firebase": "queue-you",
+  "public": "app",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
